@@ -1,8 +1,7 @@
 ﻿  main.cpp
-C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(97,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(104,19): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(108,19): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(112,19): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\poli.h(158,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\poli.h(148): warning C4172: returning address of local variable or temporary: res
+C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(97,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(104,19): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(108,19): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\mono.h(112,19): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ipnnr\source\repos\polinom\Polinom\Polinom\poli.h(170,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
   Polinom.vcxproj -> C:\Users\ipnnr\source\repos\polinom\Polinom\x64\Debug\Polinom.exe

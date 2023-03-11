@@ -59,7 +59,7 @@ public:
 	}
 	monom operator*(monom m) {
 		monom res;
-		res.c = m.c * c;
+ 		res.c = m.c * c;
 		int s1 = m.gets1() + gets1();
 		int s2 = m.gets2() + gets2();
 		int s3 = m.gets3() + gets3();

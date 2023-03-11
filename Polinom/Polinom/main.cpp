@@ -22,7 +22,8 @@ int main() {
 	ifstream file("polinom.txt");
 	file >> lfile;
 	lfile.push(m);
-	polinom p3 = lfile + p;
+	polinom p3;
+	p3 = lfile + p;
 
 	polinom a1;
 	a1.push(monom(1, 1, 1, 1));

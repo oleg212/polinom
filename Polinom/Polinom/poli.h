@@ -18,6 +18,8 @@ class polinom {
 			tmp = tmp->next;
 			delete del;
 		}
+		delete tmp;
+
 		start = nullptr;
 
 	}
@@ -43,14 +45,19 @@ public:
 
 	~polinom() {
 		purge();
-		if (isempty())return;
-		monom* tmp = start;
+		delete start;
+	}
+	polinom(const polinom& poli) {
+		start = nullptr;
+		if (&poli == this) { return; }
+		monom* tmp = poli.start;
 		while (tmp->next != nullptr) {
-			monom* del = tmp;
+			monom n(tmp->c, tmp->pow);
+			push(n);
 			tmp = tmp->next;
-			delete del;
-		}
-
+		};
+		monom n(tmp->c, tmp->pow);
+		push(n);
 	}
 	void push(monom _m) {
 
@@ -60,7 +67,12 @@ public:
 			start = val;
 			return;
 		}
-
+		if (start->getpow() > _m.getpow()) {
+			monom* tmp = start;
+			*start = _m;
+			_m.next = tmp;
+			delete tmp;
+		}
 		monom* tmp = start;
 		while (tmp->next != nullptr) {
 			if (tmp->getpow() == _m.getpow()) {
@@ -132,7 +144,7 @@ public:
 		return (res);
 	}
 
-	polinom& operator* (const polinom poli) {
+	polinom operator* (const polinom poli) {
 		polinom res;
 		monom* tmp = poli.start;
 		while (tmp != nullptr) {
